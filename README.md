@@ -15,6 +15,15 @@ $ cmake ../      # Tell CMake that all its config files are one dir up
 $ make           # And start building (should work after the previous section)
 $ make install   # Install blocks in GNU Radio
 ```
+For the rebuild version:
+
+```sh
+$ cd /.../gr-fsk4
+$ cmake -S . -B build-3.10
+$ cmake --build build-3.10 -j$(nproc)
+$ sudo cmake --install build-3.10
+$ sudo ldconfig
+```
 
 More info about out-of-tree modules: https://wiki.gnuradio.org/index.php/OutOfTreeModules
 
