@@ -25,12 +25,20 @@ if(NOT PYTHONINTERP_FOUND)
     return()
 endif()
 
+add_subdirectory(bindings)
+
 ########################################################################
 # Install python sources
 ########################################################################
 GR_PYTHON_INSTALL(
     FILES
-    __init__.py
+    gnuradio/fsk4/__init__.py
+    DESTINATION ${GR_PYTHON_DIR}/gnuradio/fsk4
+)
+
+GR_PYTHON_INSTALL(
+    FILES
+    fsk4/__init__.py
     DESTINATION ${GR_PYTHON_DIR}/fsk4
 )
 
@@ -40,4 +48,8 @@ GR_PYTHON_INSTALL(
 include(GrTest)
 
 set(GR_TEST_TARGET_DEPS gnuradio-fsk4)
-set(GR_TEST_PYTHON_DIRS ${CMAKE_BINARY_DIR}/swig)
+set(GR_TEST_PYTHON_DIRS
+    ${CMAKE_BINARY_DIR}/python
+    ${CMAKE_BINARY_DIR}/python/gnuradio
+    ${CMAKE_BINARY_DIR}/python/fsk4
+)

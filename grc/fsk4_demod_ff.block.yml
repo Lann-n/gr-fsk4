@@ -1,0 +1,37 @@
+id: fsk4_demod_ff
+label: FSK4 Demod FF
+category: '[FSK4]'
+flags: [ python ]
+
+parameters:
+-   id: queue
+    label: Message Queue
+    dtype: raw
+    default: gr.msg_queue(2)
+-   id: sample_rate
+    label: Sample Rate
+    dtype: real
+    default: '48000'
+-   id: symbol_rate
+    label: Symbol Rate
+    dtype: real
+    default: '4800'
+
+inputs:
+-   domain: stream
+    dtype: float
+
+outputs:
+-   domain: stream
+    dtype: float
+
+templates:
+    imports: |-
+        from gnuradio import gr
+        from gnuradio import fsk4
+    make: fsk4.demod_ff(${queue}, ${sample_rate}, ${symbol_rate})
+
+documentation: |-
+    FSK4 symbol demodulator.
+
+file_format: 1

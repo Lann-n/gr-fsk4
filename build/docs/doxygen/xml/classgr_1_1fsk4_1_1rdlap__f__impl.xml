@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classgr_1_1fsk4_1_1rdlap__f__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::fsk4::rdlap_f_impl</compoundname>
+    <basecompoundref refid="classgr_1_1fsk4_1_1rdlap__f" prot="public" virt="non-virtual">gr::fsk4::rdlap_f</basecompoundref>
+    <includes refid="rdlap__f__impl_8h" local="no">rdlap_f_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1fsk4_1_1rdlap__f__impl_1a509402ce42ac6f81af2b823f582f9636" prot="private" static="no" mutable="no">
+        <type>gr::msg_queue::sptr</type>
+        <definition>gr::msg_queue::sptr gr::fsk4::rdlap_f_impl::d_queue</definition>
+        <argsstring></argsstring>
+        <name>d_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="61" column="29" bodyfile="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fsk4_1_1rdlap__f__impl_1a20f18400889e16a00b792e8dcefe5d6f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fsk4::rdlap_f_impl::framer_state</definition>
+        <argsstring></argsstring>
+        <name>framer_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="65" column="13" bodyfile="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fsk4_1_1rdlap__f__impl_1ac7c79cc7ace89693315de9f73869e29f" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::fsk4::rdlap_f_impl::framer_buffer[NFRAMER_BUFFER]</definition>
+        <argsstring>[NFRAMER_BUFFER]</argsstring>
+        <name>framer_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="66" column="23" bodyfile="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fsk4_1_1rdlap__f__impl_1ac253b933a31eb4447b2c05430816bfdf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fsk4::rdlap_f_impl::iframer_buffer</definition>
+        <argsstring></argsstring>
+        <name>iframer_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="67" column="13" bodyfile="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fsk4_1_1rdlap__f__impl_1af9a6edbd4169ed6409ff739716dfa5ea" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fsk4::rdlap_f_impl::accumulate_block_index</definition>
+        <argsstring></argsstring>
+        <name>accumulate_block_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="71" column="13" bodyfile="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fsk4_1_1rdlap__f__impl_1a8bf0cbdf9c2a6665beac9471a2ee7a95" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::fsk4::rdlap_f_impl::accumulate_block_buffer[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>accumulate_block_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="72" column="23" bodyfile="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fsk4_1_1rdlap__f__impl_1a1b51e2f692c52af623184a90c72704c8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fsk4::rdlap_f_impl::processed_blocks_since_sync</definition>
+        <argsstring></argsstring>
+        <name>processed_blocks_since_sync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="74" column="13" bodyfile="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fsk4_1_1rdlap__f__impl_1a3a9f179969ae08f5e41363033ee7864e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::fsk4::rdlap_f_impl::reverse_polarity</definition>
+        <argsstring></argsstring>
+        <name>reverse_polarity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="89" column="14" bodyfile="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1rdlap__f__impl_1acb0101242031db81524e6b385a25f4b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fsk4::rdlap_f_impl::framer</definition>
+        <argsstring>(unsigned char sym)</argsstring>
+        <name>framer</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="64" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1rdlap__f__impl_1a0c103967f95d6542524870938d693830" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fsk4::rdlap_f_impl::accumulate_block</definition>
+        <argsstring>(unsigned char sym)</argsstring>
+        <name>accumulate_block</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="70" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1rdlap__f__impl_1af732e47bdac7e60e6e8a74aa770bcfa0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fsk4::rdlap_f_impl::process_block</definition>
+        <argsstring>()</argsstring>
+        <name>process_block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="76" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1rdlap__f__impl_1aefe15eaba548ad8acae8f17abb644035" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fsk4::rdlap_f_impl::viterbi_SED</definition>
+        <argsstring>(int s1, int s2)</argsstring>
+        <name>viterbi_SED</name>
+        <param>
+          <type>int</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="79" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1rdlap__f__impl_1a366f7cc66a209293569fe16fa47720db" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fsk4::rdlap_f_impl::viterbi_reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>viterbi_reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="80" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1rdlap__f__impl_1ad2dc7624827384cfc16fb9adab7ed6c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fsk4::rdlap_f_impl::viterbi_add_data</definition>
+        <argsstring>(int cc)</argsstring>
+        <name>viterbi_add_data</name>
+        <param>
+          <type>int</type>
+          <declname>cc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="81" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1rdlap__f__impl_1a707f368e428d7364a11bf02cffc608c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fsk4::rdlap_f_impl::viterbi_return_data</definition>
+        <argsstring>(unsigned char *data)</argsstring>
+        <name>viterbi_return_data</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="82" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1rdlap__f__impl_1a26ac91ab0cab68fa402a107c9d8a33dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fsk4::rdlap_f_impl::test_CRC2</definition>
+        <argsstring>(unsigned char *dd)</argsstring>
+        <name>test_CRC2</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>dd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="86" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1rdlap__f__impl_1ab875afa33d4a447081ae2f1eb54f00da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fsk4::rdlap_f_impl::rdlap_f_impl</definition>
+        <argsstring>(gr::msg_queue::sptr queue, int processing_flags)</argsstring>
+        <name>rdlap_f_impl</name>
+        <param>
+          <type>gr::msg_queue::sptr</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>processing_flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="93" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1rdlap__f__impl_1ac72d70943e9200d6c2a649c1cb540bcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fsk4::rdlap_f_impl::~rdlap_f_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~rdlap_f_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="94" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1rdlap__f__impl_1a93d2e57f561ed43d7fa999d951a98935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fsk4::rdlap_f_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="97" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1rdlap__f__impl_1a8a9ef9d22e0f34ed1e71583c43b0fd3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fsk4::rdlap_f_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="99" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gr::fsk4::rdlap_f</label>
+        <link refid="classgr_1_1fsk4_1_1rdlap__f"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+      <node id="1">
+        <label>gr::fsk4::rdlap_f_impl</label>
+        <link refid="classgr_1_1fsk4_1_1rdlap__f__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gr::fsk4::rdlap_f</label>
+        <link refid="classgr_1_1fsk4_1_1rdlap__f"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+      <node id="1">
+        <label>gr::fsk4::rdlap_f_impl</label>
+        <link refid="classgr_1_1fsk4_1_1rdlap__f__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" line="58" column="5" bodyfile="/home/lann/Project/gr-fsk4/lib/rdlap_f_impl.h" bodystart="59" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a0c103967f95d6542524870938d693830" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>accumulate_block</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a8bf0cbdf9c2a6665beac9471a2ee7a95" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>accumulate_block_buffer</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1af9a6edbd4169ed6409ff739716dfa5ea" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>accumulate_block_index</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a509402ce42ac6f81af2b823f582f9636" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>d_queue</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a93d2e57f561ed43d7fa999d951a98935" prot="public" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1acb0101242031db81524e6b385a25f4b8" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>framer</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1ac7c79cc7ace89693315de9f73869e29f" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>framer_buffer</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a20f18400889e16a00b792e8dcefe5d6f" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>framer_state</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a8a9ef9d22e0f34ed1e71583c43b0fd3f" prot="public" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1ac253b933a31eb4447b2c05430816bfdf" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>iframer_buffer</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f_1a3c98bfc5f20b5702ceb67387b4a38025" prot="public" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1af732e47bdac7e60e6e8a74aa770bcfa0" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>process_block</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a1b51e2f692c52af623184a90c72704c8" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>processed_blocks_since_sync</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1ab875afa33d4a447081ae2f1eb54f00da" prot="public" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>rdlap_f_impl</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a3a9f179969ae08f5e41363033ee7864e" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>reverse_polarity</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f_1a31b2f53a46e1ed83fc4fa07e31d3f8c0" prot="public" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a26ac91ab0cab68fa402a107c9d8a33dd" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>test_CRC2</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1ad2dc7624827384cfc16fb9adab7ed6c2" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>viterbi_add_data</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a366f7cc66a209293569fe16fa47720db" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>viterbi_reset</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a707f368e428d7364a11bf02cffc608c4" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>viterbi_return_data</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1aefe15eaba548ad8acae8f17abb644035" prot="private" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>viterbi_SED</name></member>
+      <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1ac72d70943e9200d6c2a649c1cb540bcb" prot="public" virt="non-virtual"><scope>gr::fsk4::rdlap_f_impl</scope><name>~rdlap_f_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

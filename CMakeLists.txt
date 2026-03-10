@@ -20,9 +20,13 @@
 ########################################################################
 # Project setup
 ########################################################################
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.8)
 project(gr-fsk4 CXX C)
 enable_testing()
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 #select the release build type by default to get optimization flags
 if(NOT CMAKE_BUILD_TYPE)
@@ -111,7 +115,7 @@ find_package(Doxygen)
 # caps such as FILTER or FFT) and change the version to the minimum
 # API compatible version required.
 set(GR_REQUIRED_COMPONENTS RUNTIME)
-find_package(Gnuradio "3.7.2" REQUIRED)
+find_package(Gnuradio "3.10" REQUIRED)
 
 if(NOT CPPUNIT_FOUND)
     message(FATAL_ERROR "CppUnit required to compile fsk4")
@@ -147,7 +151,6 @@ link_directories(
 
 # Set component parameters
 set(GR_FSK4_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include CACHE INTERNAL "" FORCE)
-set(GR_FSK4_SWIG_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/swig CACHE INTERNAL "" FORCE)
 
 ########################################################################
 # Create uninstall target
@@ -166,11 +169,12 @@ add_custom_target(uninstall
 ########################################################################
 add_subdirectory(include/fsk4)
 add_subdirectory(lib)
-add_subdirectory(swig)
-add_subdirectory(python)
-add_subdirectory(grc)
 add_subdirectory(apps)
 add_subdirectory(docs)
+if(ENABLE_PYTHON)
+    add_subdirectory(python)
+    add_subdirectory(grc)
+endif()
 
 ########################################################################
 # Install cmake search helper for this library

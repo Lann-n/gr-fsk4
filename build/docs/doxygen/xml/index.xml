@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classgr_1_1fsk4_1_1apco25__f" kind="class"><name>gr::fsk4::apco25_f</name>
+    <member refid="classgr_1_1fsk4_1_1apco25__f_1a22d4b5e04f009b2eedfb3a10827b8c80" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f_1a9ff6e4dfd23a23e9fb5efb42ed9d3cd7" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fsk4_1_1apco25__f__impl" kind="class"><name>gr::fsk4::apco25_f_impl</name>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1aa79d9fe5919493fcc896d57d4a3e619a" kind="variable"><name>d_queue</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a2034e6acd052f0dec4886f7d7c0bddd1" kind="variable"><name>sym_counter</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1aa55edbced1756e044045853f2b97172a" kind="variable"><name>reverse_polarity</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a9626c052b676233caaef715743738972" kind="variable"><name>framer_state</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1add5bcc6bb78a38a065fe3af0d7493854" kind="variable"><name>framer_buffer</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a7ae9e5e162c8f5da34e7ecf37689fbba" kind="variable"><name>iframer_buffer</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a5874d4c5efb8161f74f5c7f292171e48" kind="variable"><name>symbol_counter</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a5b72b913dad28249bdd34349ea801a78" kind="variable"><name>data_unit</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a22b6437a3d6ca063ed56cca044073c18" kind="variable"><name>apco25_nid_nac</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a4db4b8b90503223edbbcd285330c8946" kind="variable"><name>apco25_nid_duid</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a945964f9a3e4da551138ca6039cbcb3e" kind="function"><name>framer</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a482c5c83e00c919ff0305f8df607bb58" kind="function"><name>strip_status_syms</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a54c99a020439b61922a2f308c42473cf" kind="function"><name>process_NID</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a1842dd35d29bb62045c55393e41f2e3e" kind="function"><name>process_HDU</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a66c886611bf7273bf976aa228293b27f" kind="function"><name>apco25_f_impl</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a059c5cc297d85184c4ff2a1ffdafd610" kind="function"><name>~apco25_f_impl</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1ad335c94f5de4a68ae3a90f55f24e0b3f" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1fsk4_1_1apco25__f__impl_1a6bd6dd1250767546829f36567297ecd7" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fsk4_1_1demod__ff" kind="class"><name>gr::fsk4::demod_ff</name>
+    <member refid="classgr_1_1fsk4_1_1demod__ff_1a1f6b64ca0392e6811b6fc162be83d8dc" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff_1a3aa6037dae37ed976afe8bcbc31fb4a0" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fsk4_1_1demod__ff__impl" kind="class"><name>gr::fsk4::demod_ff_impl</name>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1abd554e73ffa1189b43097f2516b65593" kind="variable"><name>d_queue</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1a896fcdd4a412ff1a186b0e745e358f33" kind="variable"><name>sample_rate_hz</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1a80c070ce29396ddace6e2cfc8757ae88" kind="variable"><name>symbol_rate_hz</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1a2d7a7723948d2d78229797d1f2e11923" kind="variable"><name>last_input</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1ac1a657d3df6ac4d5be78248a6db24c5c" kind="variable"><name>symbol_time</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1a4f1f1e52148e0b358c676c734e71d952" kind="variable"><name>dt_symbol_time</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1a3651f2890df61d649e2c49cf63552541" kind="variable"><name>symbol_spread</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1a26a20e2d31c22d3e23a79eaad3a6adcd" kind="variable"><name>idata_history</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1adc2d1ae0d3caf277be0a92e4df414c5f" kind="variable"><name>data_history</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1a9157df9754b2901ab40dc8ec1f327423" kind="variable"><name>fine_frequency_correction</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1ad8786ee02049ebc9fbbf7aa4d352d0ae" kind="variable"><name>coarse_frequency_correction</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1adc3abd6a43a0d1ed5d6f41a7afcc9c3c" kind="function"><name>send_frequency_correction</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1aab6869067fbc4fe5a91d66675dd18288" kind="function"><name>tracking_loop_mmse</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1ad7a01eff57018e0db580fe884587dbf0" kind="function"><name>demod_ff_impl</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1ab9182cc97b43accdf3edf594ad1e4db3" kind="function"><name>~demod_ff_impl</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1aea16240471efe6b7ed70f137edba7073" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1fsk4_1_1demod__ff__impl_1a9a6fb384628b62994097111c1d9dc245" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fsk4_1_1generic__f" kind="class"><name>gr::fsk4::generic_f</name>
+    <member refid="classgr_1_1fsk4_1_1generic__f_1a962b33ff7cd1fbc0866d42d0c7411182" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fsk4_1_1generic__f_1a2e22d968a107036bc2a94d53cabec9c6" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fsk4_1_1generic__f__impl" kind="class"><name>gr::fsk4::generic_f_impl</name>
+    <member refid="classgr_1_1fsk4_1_1generic__f__impl_1a38dcb4f3a282fbdf52ca81c30851000b" kind="variable"><name>d_queue</name></member>
+    <member refid="classgr_1_1fsk4_1_1generic__f__impl_1a16cb27a8421deeb7fd52d66ab58ea478" kind="variable"><name>sym_counter</name></member>
+    <member refid="classgr_1_1fsk4_1_1generic__f__impl_1ad95f323fb2e1d7342f7f0bf31d599a4f" kind="variable"><name>reverse_polarity</name></member>
+    <member refid="classgr_1_1fsk4_1_1generic__f__impl_1ae0c12b706a321b86494a6ac472681cba" kind="function"><name>generic_f_impl</name></member>
+    <member refid="classgr_1_1fsk4_1_1generic__f__impl_1a7cfaab7aa1d0cdf0258c46bf639a56c8" kind="function"><name>~generic_f_impl</name></member>
+    <member refid="classgr_1_1fsk4_1_1generic__f__impl_1ab6b684b67c761d9eb87ee19cb36b6b7a" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1fsk4_1_1generic__f__impl_1aad0d274f269bf5f9b994710d5d251ca5" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="classgr_1_1fsk4_1_1rdlap__f" kind="class"><name>gr::fsk4::rdlap_f</name>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f_1a31b2f53a46e1ed83fc4fa07e31d3f8c0" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f_1a3c98bfc5f20b5702ceb67387b4a38025" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1fsk4_1_1rdlap__f__impl" kind="class"><name>gr::fsk4::rdlap_f_impl</name>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a509402ce42ac6f81af2b823f582f9636" kind="variable"><name>d_queue</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a20f18400889e16a00b792e8dcefe5d6f" kind="variable"><name>framer_state</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1ac7c79cc7ace89693315de9f73869e29f" kind="variable"><name>framer_buffer</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1ac253b933a31eb4447b2c05430816bfdf" kind="variable"><name>iframer_buffer</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1af9a6edbd4169ed6409ff739716dfa5ea" kind="variable"><name>accumulate_block_index</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a8bf0cbdf9c2a6665beac9471a2ee7a95" kind="variable"><name>accumulate_block_buffer</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a1b51e2f692c52af623184a90c72704c8" kind="variable"><name>processed_blocks_since_sync</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a3a9f179969ae08f5e41363033ee7864e" kind="variable"><name>reverse_polarity</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1acb0101242031db81524e6b385a25f4b8" kind="function"><name>framer</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a0c103967f95d6542524870938d693830" kind="function"><name>accumulate_block</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1af732e47bdac7e60e6e8a74aa770bcfa0" kind="function"><name>process_block</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1aefe15eaba548ad8acae8f17abb644035" kind="function"><name>viterbi_SED</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a366f7cc66a209293569fe16fa47720db" kind="function"><name>viterbi_reset</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1ad2dc7624827384cfc16fb9adab7ed6c2" kind="function"><name>viterbi_add_data</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a707f368e428d7364a11bf02cffc608c4" kind="function"><name>viterbi_return_data</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a26ac91ab0cab68fa402a107c9d8a33dd" kind="function"><name>test_CRC2</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1ab875afa33d4a447081ae2f1eb54f00da" kind="function"><name>rdlap_f_impl</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1ac72d70943e9200d6c2a649c1cb540bcb" kind="function"><name>~rdlap_f_impl</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a93d2e57f561ed43d7fa999d951a98935" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1fsk4_1_1rdlap__f__impl_1a8a9ef9d22e0f34ed1e71583c43b0fd3f" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1fsk4" kind="namespace"><name>gr::fsk4</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="apco25__f_8h" kind="file"><name>apco25_f.h</name>
+  </compound>
+  <compound refid="apco25__f__impl_8h" kind="file"><name>apco25_f_impl.h</name>
+    <member refid="apco25__f__impl_8h_1afb8a9b2cf945b9400e7b0c7455450e92" kind="define"><name>NFRAMER_BUFFER_APCO25</name></member>
+    <member refid="apco25__f__impl_8h_1a41328988efad117c5fa88e45a9dc9f64" kind="define"><name>LEN_APCO25_SYNC</name></member>
+    <member refid="apco25__f__impl_8h_1a6dc89b6b1a3b5db0ccf4b20a4ba3ea3c" kind="variable"><name>apco25_sync</name></member>
+    <member refid="apco25__f__impl_8h_1afdc7b411fc38a94fa48752fb033a32ba" kind="variable"><name>apco25_duid_str</name></member>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a2ed043d4a50f1c58a34908fa2dfa0e85" kind="define"><name>FSK4_API</name></member>
+  </compound>
+  <compound refid="demod__ff_8h" kind="file"><name>demod_ff.h</name>
+  </compound>
+  <compound refid="demod__ff__impl_8h" kind="file"><name>demod_ff_impl.h</name>
+    <member refid="demod__ff__impl_8h_1a21f9ff595c7bea42a975c470cec1586e" kind="variable"><name>K_SYMBOL_SPREAD</name></member>
+    <member refid="demod__ff__impl_8h_1a2c94a53d2457ba45f31ea39190c661a4" kind="variable"><name>SYMBOL_SPREAD_MAX</name></member>
+    <member refid="demod__ff__impl_8h_1af3bbfc3ba88fe9c508a6f52ff108e10d" kind="variable"><name>SYMBOL_SPREAD_MIN</name></member>
+    <member refid="demod__ff__impl_8h_1af2fd3f07ff81403f3efd5027ebae1d5d" kind="variable"><name>K_SYMBOL_TIMING</name></member>
+    <member refid="demod__ff__impl_8h_1a6704beb58dbd7c65938ce26eda03aea3" kind="variable"><name>K_FINE_FREQUENCY</name></member>
+    <member refid="demod__ff__impl_8h_1ab75b8e5cc93a29f8576b8490256ebf00" kind="variable"><name>K_COARSE_FREQUENCY</name></member>
+    <member refid="demod__ff__impl_8h_1a96eb94dd0c8e8dfcc1446274c7977261" kind="variable"><name>COARSE_FREQUENCY_DEADBAND</name></member>
+  </compound>
+  <compound refid="generic__f_8h" kind="file"><name>generic_f.h</name>
+  </compound>
+  <compound refid="generic__f__impl_8h" kind="file"><name>generic_f_impl.h</name>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="interpolator__taps_8h" kind="file"><name>interpolator_taps.h</name>
+    <member refid="interpolator__taps_8h_1a33a631989ea1deaea5220f12a8269401" kind="variable"><name>NTAPS</name></member>
+    <member refid="interpolator__taps_8h_1ae78d2504eab8258b74c453901af9693f" kind="variable"><name>NSTEPS</name></member>
+    <member refid="interpolator__taps_8h_1a30bf032e13c2a9fc4a98e14e390cd65a" kind="variable"><name>taps</name></member>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="rdlap__f_8h" kind="file"><name>rdlap_f.h</name>
+  </compound>
+  <compound refid="rdlap__f__impl_8h" kind="file"><name>rdlap_f_impl.h</name>
+    <member refid="rdlap__f__impl_8h_1a59fcd549779ce799445ec763cae8aca7" kind="define"><name>NFRAMER_BUFFER</name></member>
+    <member refid="rdlap__f__impl_8h_1a0475982e14a51250e524c52f560bb0ce" kind="define"><name>LEN_RDLAP_SYNC</name></member>
+    <member refid="rdlap__f__impl_8h_1ac25992ed395da61d06a5575dcd765ef6" kind="variable"><name>rdlap_sync</name></member>
+    <member refid="rdlap__f__impl_8h_1a7a492e3a2bd52c88236c89ab06e17d9d" kind="variable"><name>block_interleave</name></member>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_49e56c817e5e54854c35e136979f97ca" kind="dir"><name>docs</name>
+  </compound>
+  <compound refid="dir_359d2bec989c9a8deeeb9aee335c1c76" kind="dir"><name>doxygen</name>
+  </compound>
+  <compound refid="dir_073fcd0cdfd39d138a8aead4570f0c3b" kind="dir"><name>fsk4</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_f2cd86917185299abf5a1f0679072f3c" kind="dir"><name>other</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

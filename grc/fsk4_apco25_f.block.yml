@@ -1,0 +1,29 @@
+id: fsk4_apco25_f
+label: FSK4 APCO25 F
+category: '[FSK4]'
+flags: [ python ]
+
+parameters:
+-   id: queue
+    label: Message Queue
+    dtype: raw
+    default: gr.msg_queue(2)
+-   id: processing_flags
+    label: Processing Flags
+    dtype: int
+    default: '0'
+
+inputs:
+-   domain: stream
+    dtype: float
+
+templates:
+    imports: |-
+        from gnuradio import gr
+        from gnuradio import fsk4
+    make: fsk4.apco25_f(${queue}, ${processing_flags})
+
+documentation: |-
+    APCO25 frame decoder for FSK4 symbols.
+
+file_format: 1

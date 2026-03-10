@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="demod__ff__impl_8h" kind="file" language="C++">
+    <compoundname>demod_ff_impl.h</compoundname>
+    <includes refid="demod__ff_8h" local="no">fsk4/demod_ff.h</includes>
+    <includes refid="interpolator__taps_8h" local="yes">interpolator_taps.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>fsk4/demod_ff.h</label>
+        <link refid="demod__ff_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fsk4/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="8">
+        <label>interpolator_taps.h</label>
+        <link refid="interpolator__taps_8h"/>
+      </node>
+      <node id="5">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="6">
+        <label>gnuradio/msg_queue.h</label>
+      </node>
+      <node id="7">
+        <label>gnuradio/message.h</label>
+      </node>
+      <node id="1">
+        <label>demod_ff_impl.h</label>
+        <link refid="demod__ff__impl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1fsk4_1_1demod__ff__impl" prot="public">gr::fsk4::demod_ff_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1fsk4">gr::fsk4</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="demod__ff__impl_8h_1a21f9ff595c7bea42a975c470cec1586e" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double K_SYMBOL_SPREAD</definition>
+        <argsstring></argsstring>
+        <name>K_SYMBOL_SPREAD</name>
+        <initializer>= 0.0100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" line="30" column="21" bodyfile="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="demod__ff__impl_8h_1a2c94a53d2457ba45f31ea39190c661a4" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double SYMBOL_SPREAD_MAX</definition>
+        <argsstring></argsstring>
+        <name>SYMBOL_SPREAD_MAX</name>
+        <initializer>= 2.4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" line="32" column="21" bodyfile="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="demod__ff__impl_8h_1af3bbfc3ba88fe9c508a6f52ff108e10d" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double SYMBOL_SPREAD_MIN</definition>
+        <argsstring></argsstring>
+        <name>SYMBOL_SPREAD_MIN</name>
+        <initializer>= 1.6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" line="33" column="21" bodyfile="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="demod__ff__impl_8h_1af2fd3f07ff81403f3efd5027ebae1d5d" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double K_SYMBOL_TIMING</definition>
+        <argsstring></argsstring>
+        <name>K_SYMBOL_TIMING</name>
+        <initializer>= 0.025</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" line="36" column="21" bodyfile="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="demod__ff__impl_8h_1a6704beb58dbd7c65938ce26eda03aea3" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double K_FINE_FREQUENCY</definition>
+        <argsstring></argsstring>
+        <name>K_FINE_FREQUENCY</name>
+        <initializer>= 0.125</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" line="39" column="21" bodyfile="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="demod__ff__impl_8h_1ab75b8e5cc93a29f8576b8490256ebf00" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double K_COARSE_FREQUENCY</definition>
+        <argsstring></argsstring>
+        <name>K_COARSE_FREQUENCY</name>
+        <initializer>= 0.00125</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" line="40" column="21" bodyfile="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="demod__ff__impl_8h_1a96eb94dd0c8e8dfcc1446274c7977261" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double COARSE_FREQUENCY_DEADBAND</definition>
+        <argsstring></argsstring>
+        <name>COARSE_FREQUENCY_DEADBAND</name>
+        <initializer>= 1.66</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" line="41" column="21" bodyfile="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lann/Project/gr-fsk4/lib/demod_ff_impl.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
+    <compoundname>lib</compoundname>
+    <innerfile refid="apco25__f__impl_8h">apco25_f_impl.h</innerfile>
+    <innerfile refid="demod__ff__impl_8h">demod_ff_impl.h</innerfile>
+    <innerfile refid="generic__f__impl_8h">generic_f_impl.h</innerfile>
+    <innerfile refid="interpolator__taps_8h">interpolator_taps.h</innerfile>
+    <innerfile refid="rdlap__f__impl_8h">rdlap_f_impl.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/lann/Project/gr-fsk4/lib/"/>
+  </compounddef>
+</doxygen>

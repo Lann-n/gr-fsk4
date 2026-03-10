@@ -18,8 +18,9 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    fsk4_demod_ff.xml
-    fsk4_generic_f.xml
-    fsk4_apco25_f.xml
-    fsk4_rdlap_f.xml DESTINATION share/gnuradio/grc/blocks
+    fsk4_demod_ff.block.yml
+    fsk4_generic_f.block.yml
+    fsk4_apco25_f.block.yml
+    fsk4_rdlap_f.block.yml
+    DESTINATION share/gnuradio/grc/blocks
 )

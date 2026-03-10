@@ -39,7 +39,7 @@ if(NOT fsk4_sources)
 endif(NOT fsk4_sources)
 
 add_library(gnuradio-fsk4 SHARED ${fsk4_sources})
-target_link_libraries(gnuradio-fsk4 ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES})
+target_link_libraries(gnuradio-fsk4 ${Boost_LIBRARIES} gnuradio::gnuradio-runtime)
 set_target_properties(gnuradio-fsk4 PROPERTIES DEFINE_SYMBOL "gnuradio_fsk4_EXPORTS")
 
 if(APPLE)
@@ -73,7 +73,7 @@ add_executable(test-fsk4 ${test_fsk4_sources})
 
 target_link_libraries(
   test-fsk4
-  ${GNURADIO_RUNTIME_LIBRARIES}
+  gnuradio::gnuradio-runtime
   ${Boost_LIBRARIES}
   ${CPPUNIT_LIBRARIES}
   gnuradio-fsk4

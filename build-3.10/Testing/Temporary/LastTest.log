@@ -1,0 +1,20 @@
+Start testing: Mar 11 03:56 CST
+----------------------------------------------------------
+1/1 Testing: test_fsk4
+1/1 Test: test_fsk4
+Command: "/usr/bin/sh" "test_fsk4_test.sh"
+Directory: /home/lann/Project/gr-fsk4/build-3.10/lib
+"test_fsk4" start time: Mar 11 03:56 CST
+Output:
+----------------------------------------------------------
+
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_fsk4" end time: Mar 11 03:56 CST
+"test_fsk4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 11 03:56 CST

@@ -27,7 +27,6 @@
 #include <cppunit/TextTestRunner.h>
 #include <cppunit/XmlOutputter.h>
 
-#include <gnuradio/unittests.h>
 #include "qa_fsk4.h"
 #include <iostream>
 #include <fstream>
@@ -36,7 +35,7 @@ int
 main (int argc, char **argv)
 {
   CppUnit::TextTestRunner runner;
-  std::ofstream xmlfile(get_unittest_path("fsk4.xml").c_str());
+  std::ofstream xmlfile("fsk4.xml");
   CppUnit::XmlOutputter *xmlout = new CppUnit::XmlOutputter(&runner.result(), xmlfile);
 
   runner.addTest(qa_fsk4::suite());

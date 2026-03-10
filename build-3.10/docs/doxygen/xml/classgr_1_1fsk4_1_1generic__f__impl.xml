@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classgr_1_1fsk4_1_1generic__f__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::fsk4::generic_f_impl</compoundname>
+    <basecompoundref refid="classgr_1_1fsk4_1_1generic__f" prot="public" virt="non-virtual">gr::fsk4::generic_f</basecompoundref>
+    <includes refid="generic__f__impl_8h" local="no">generic_f_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1fsk4_1_1generic__f__impl_1a38dcb4f3a282fbdf52ca81c30851000b" prot="private" static="no" mutable="no">
+        <type>gr::msg_queue::sptr</type>
+        <definition>gr::msg_queue::sptr gr::fsk4::generic_f_impl::d_queue</definition>
+        <argsstring></argsstring>
+        <name>d_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/generic_f_impl.h" line="32" column="27" bodyfile="/home/lann/Project/gr-fsk4/lib/generic_f_impl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fsk4_1_1generic__f__impl_1a16cb27a8421deeb7fd52d66ab58ea478" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::fsk4::generic_f_impl::sym_counter</definition>
+        <argsstring></argsstring>
+        <name>sym_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/generic_f_impl.h" line="35" column="11" bodyfile="/home/lann/Project/gr-fsk4/lib/generic_f_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1fsk4_1_1generic__f__impl_1ad95f323fb2e1d7342f7f0bf31d599a4f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::fsk4::generic_f_impl::reverse_polarity</definition>
+        <argsstring></argsstring>
+        <name>reverse_polarity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/generic_f_impl.h" line="37" column="12" bodyfile="/home/lann/Project/gr-fsk4/lib/generic_f_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1generic__f__impl_1ae0c12b706a321b86494a6ac472681cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fsk4::generic_f_impl::generic_f_impl</definition>
+        <argsstring>(gr::msg_queue::sptr queue, int processing_flags)</argsstring>
+        <name>generic_f_impl</name>
+        <param>
+          <type>gr::msg_queue::sptr</type>
+          <declname>queue</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>processing_flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/generic_f_impl.h" line="40" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1generic__f__impl_1a7cfaab7aa1d0cdf0258c46bf639a56c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::fsk4::generic_f_impl::~generic_f_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~generic_f_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/generic_f_impl.h" line="41" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1generic__f__impl_1ab6b684b67c761d9eb87ee19cb36b6b7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::fsk4::generic_f_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/generic_f_impl.h" line="44" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fsk4_1_1generic__f__impl_1aad0d274f269bf5f9b994710d5d251ca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::fsk4::generic_f_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/lann/Project/gr-fsk4/lib/generic_f_impl.h" line="46" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::fsk4::generic_f_impl</label>
+        <link refid="classgr_1_1fsk4_1_1generic__f__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+      <node id="2">
+        <label>gr::fsk4::generic_f</label>
+        <link refid="classgr_1_1fsk4_1_1generic__f"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::fsk4::generic_f_impl</label>
+        <link refid="classgr_1_1fsk4_1_1generic__f__impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gr::block</label>
+      </node>
+      <node id="2">
+        <label>gr::fsk4::generic_f</label>
+        <link refid="classgr_1_1fsk4_1_1generic__f"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/lann/Project/gr-fsk4/lib/generic_f_impl.h" line="29" column="5" bodyfile="/home/lann/Project/gr-fsk4/lib/generic_f_impl.h" bodystart="30" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fsk4_1_1generic__f__impl_1a38dcb4f3a282fbdf52ca81c30851000b" prot="private" virt="non-virtual"><scope>gr::fsk4::generic_f_impl</scope><name>d_queue</name></member>
+      <member refid="classgr_1_1fsk4_1_1generic__f__impl_1ab6b684b67c761d9eb87ee19cb36b6b7a" prot="public" virt="non-virtual"><scope>gr::fsk4::generic_f_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1fsk4_1_1generic__f__impl_1aad0d274f269bf5f9b994710d5d251ca5" prot="public" virt="non-virtual"><scope>gr::fsk4::generic_f_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1fsk4_1_1generic__f__impl_1ae0c12b706a321b86494a6ac472681cba" prot="public" virt="non-virtual"><scope>gr::fsk4::generic_f_impl</scope><name>generic_f_impl</name></member>
+      <member refid="classgr_1_1fsk4_1_1generic__f_1a2e22d968a107036bc2a94d53cabec9c6" prot="public" virt="non-virtual"><scope>gr::fsk4::generic_f_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1fsk4_1_1generic__f__impl_1ad95f323fb2e1d7342f7f0bf31d599a4f" prot="private" virt="non-virtual"><scope>gr::fsk4::generic_f_impl</scope><name>reverse_polarity</name></member>
+      <member refid="classgr_1_1fsk4_1_1generic__f_1a962b33ff7cd1fbc0866d42d0c7411182" prot="public" virt="non-virtual"><scope>gr::fsk4::generic_f_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fsk4_1_1generic__f__impl_1a16cb27a8421deeb7fd52d66ab58ea478" prot="private" virt="non-virtual"><scope>gr::fsk4::generic_f_impl</scope><name>sym_counter</name></member>
+      <member refid="classgr_1_1fsk4_1_1generic__f__impl_1a7cfaab7aa1d0cdf0258c46bf639a56c8" prot="public" virt="non-virtual"><scope>gr::fsk4::generic_f_impl</scope><name>~generic_f_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -23,6 +23,7 @@
 #define INCLUDED_FSK4_GENERIC_F_H
 
 #include <fsk4/api.h>
+#include <memory>
 #include <gnuradio/block.h>
 #include <gnuradio/msg_queue.h>
 #include <gnuradio/message.h>
@@ -38,7 +39,7 @@ namespace gr {
     class FSK4_API generic_f : virtual public gr::block
     {
      public:
-      typedef boost::shared_ptr<generic_f> sptr;
+      typedef std::shared_ptr<generic_f> sptr;
 
       /*!
        * \brief Return a shared_ptr to a new instance of fsk4::generic_f.
@@ -55,4 +56,3 @@ namespace gr {
 } // namespace gr
 
 #endif /* INCLUDED_FSK4_GENERIC_F_H */
-
